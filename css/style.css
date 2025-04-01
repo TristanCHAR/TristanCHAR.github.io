@@ -723,6 +723,12 @@ nav.menu a:hover {
     color: var(--color-link);
 }
 
+@media (max-width: 768px) {
+    .header--logo img {
+        display: none;
+    }
+}
+
 .quote {
     font-size: 2rem;
     padding: 1rem;
