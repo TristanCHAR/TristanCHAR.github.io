@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NovaFlux Immo</title>
+    <meta name="description" content="A simple grid-powered multibox menu that shows with a reveal animation." />
+    <meta name="keywords" content="slideshow, reveal, effect, animation, web design, template, demo" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/fontawesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/brands.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/solid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+</head>
+
+<body class="site-main-wrapper loading">
+    <svg class="hidden">
+        <symbol id="icon-menu" viewBox="0 0 119 25">
+            <title>menu</title>
+            <path d="M36,8 L36,0 L100,0 L100,8 L36,8 Z M0,8 L0,0 L24,0 L24,8 L0,8 Z M0,28 L0,20 L71,20 L71,28 L0,28 Z" />
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+            <title>close</title>
+            <path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z" />
+        </symbol>
+    </svg>
+    <main>
+        <div class="frame">
+            <header class="header--logo">
+                <div class="logo--links">
+                    <a href="index.html">
+                        <img src="img/IMG_0500.jpg" style="width: 100px; height: auto;" />
+                    </a>
+                </div>
+            </header>
+        </div>    
+        <div class="content">
+            <div class="menu-wrapper home-slider">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/Paris.jpeg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3><span class="block-border">NovaFlux Immo :<br></span> Ventes rapides immobilières,<br> connection acheteurs/vendeurs </h3>
+                                    <div class="hero__slideContent text-center mt-5">
+                                        <h1>Maxime Karassimeonov</h1>
+                                        <p>Basé à Paris (16e), je
+                                            connecte vendeurs et acheteurs sérieux pour des
+                                            ventes rapides et efficaces. Spécialisé dans les biens
+                                            de 400k€ à 1M€ (Neuilly, Boulogne), je trouve des
+                                            acheteurs cash ou prêt en un temps record !</p>
+                                        <span class="hero__slideContent--right"></span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="menu menu-index">
+
+            <div class="menu__item menu__item--1" data-direction="bt">
+                <div class="menu__item-inner">
+                    <div class="mainmenu">
+                        <a href="index.html" class="mainmenu__item">Accueil</a>
+                        <a href="./about.html" class="mainmenu__item">à propos</a>
+                        <a href="./project-filter.html" class="mainmenu__item">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__item menu__item--2" data-direction="lr">
+                <div class="menu__item-inner">
+                    <div class="menu__item-map"></div>
+                    <a href="#" class="menu__item-hoverlink">Paris</a>
+                </div>
+            </div>
+            <div class="menu__item menu__item--3" data-direction="bt">
+                <div class="menu__item-inner">
+                    <div class="sidemenu">
+                        <a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Rapidité</span></a>
+                        <a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Efficacité</span></a>
+                        <a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Communication</span></a>
+                        <a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Profesionnels</span></a>
+                        <a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Mission</span></a>
+                        <a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">Satisfaction</span></a>
+                        <a href="#" class="sidemenu__item"><span class="sidemenu__item-inner">...</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__item menu__item--4" data-direction="rl">
+                <div class="menu__item-inner">
+                    <p class="label label--topleft label--line">Contactez-nous</p>
+                </div>
+            </div>
+            <div class="menu__item menu__item--5" data-direction="tb">
+                <div class="menu__item-inner">
+                    <p class="quote">Investissez sur votre avenir, contactez-nous !</p>
+                </div>
+            </div>
+            <button class="action action--menu"><svg class="icon icon--menu">
+                    <use xlink:href="#icon-menu"></use>
+                </svg></button>
+            <button class="action action--close"><svg class="icon icon--close">
+                    <use xlink:href="#icon-close"></use>
+                </svg></button>
+        </nav>
+    </main>
+    <main-body class="main-body">
+        <section class="section--about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6 col-6">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                                        <div class="card about-card-item--single rounded border-0 shadow-lg overflow-hidden">
+                                            <img src="img/about2.jpg" class="about-item--image img-fluid" alt="Image" />
+                                            <div class="about-item-img--overlay bg-dark"></div>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+
+                                    <div class="col-12">
+                                        <div class="mt-4 pt-2 text-right">
+                                            <a href="#services" class="btn btn-info">En savoir plus <i class="mdi mdi-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end row-->
+                            </div>
+                            <!--end col-->
+
+                            <div class="col-lg-6 col-md-6 col-6">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="card about-card-item--single rounded border-0 shadow-lg overflow-hidden">
+                                            <img src="img/immeuble1.webp" class="about-item--image img-fluid" alt="Image" />
+                                            <div class="about-item-img--overlay bg-dark"></div>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+
+                                    <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                                        <div class="card about-card-item--single rounded border-0 shadow-lg overflow-hidden">
+                                            <img src="img/immeuble2.jpeg" class="about-item--image img-fluid" alt="Image" />
+                                            <div class="about-item-img--overlay bg-dark"></div>
+                                        </div>
+                                    </div>
+                                    <!--end col-->
+                                </div>
+                                <!--end row-->
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+                        <div class="about-section--title ml-lg-5">
+                            <h5 class="text-custom font-weight-normal mb-3">Quelques chiffres de notre entreprise</h5>
+                            <h4 class="about-section--sub-title mb-4">
+                                Apporteur d'affaires immobilier,<br>
+                                Paris - Neuilly - Boulogne <br>
+                            </h4>
+
+                            <div class="row">
+                                <div class="col-lg-6 mt-4 pt-2">
+                                    <div class="media about-project--short-overview btn-ripple align-items-center shadow">
+                                        <i class="fa fa-crown h4 mb-0 text-custom"></i>
+                                        <div class="media-body mt-3">
+                                            <h6 class="ml-3 mb-0">< 2 jours</h6>
+                                            <p class="ml-3 mb-0">Connection rapide </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mt-4 pt-2">
+                                    <div class="media about-project--short-overview btn-ripple align-items-center shadow">
+                                        <i class="fa fa-smile h4 mb-0 text-custom"></i>
+                                        <div class="media-body mt-3">
+                                            <h6 class="ml-3 mb-0">10+</h6>
+                                            <p class="ml-3 mb-0">Clients satisfaits</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mt-4 pt-2">
+                                    <div class="media about-project--short-overview btn-ripple align-items-center shadow">
+                                        <i class="fa fa-user h4 mb-0 text-custom"></i>
+                                        <div class="media-body mt-3">
+                                            <h6 class="ml-3 mb-0">7/7</h6>
+                                            <p class="ml-3 mb-0">Disponible en appel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mt-4 pt-2">
+                                    <div class="media about-project--short-overview btn-ripple align-items-center shadow">
+                                        <i class="fa fa-building h4 mb-0 text-custom"></i>
+                                        <div class="media-body mt-3">
+                                            <h6 class="ml-3 mb-0">5+</h6>
+                                            <p class="ml-3 mb-0">Projets en cours</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-->
+                </div>
+                <!--enr row-->
+            </div>
+        </section>
+
+        <section class="section--portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Dernières missions réalisées :</h2>
+                        <div id="completeProjectCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#completeProjectCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#completeProjectCarousel" data-slide-to="1"></li>
+                                <li data-target="#completeProjectCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for carousel items -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="row align-items-end pb-md-5 mb-4">
+                                                <div class="col-md-7 mb-4 mb-md-0">
+                                                    <div class="portfolio__img">
+                                                        <img class="img-fluid" src="img/Screenshot from 2025-03-29 17-22-18.png" alt="">
+                                                        <div class="box-content">
+                                                            <h3 class="title">Paris 16</h3>
+                                                            <span class="post">Rue de la tour</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 mb-5 pl-xl-5">
+                                                    <h4 class="section-intro__title left-border">Février, 2025</h4>
+                                                    <h2 class="section-intro__subtitle small">Appartement dans le 16ème arrondissement</h2>
+                                                    <p>Transaction effectuée en moins de 2 semaines.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="row align-items-end pb-md-5 mb-4">
+                                                <div class="col-md-7 mb-4 mb-md-0">
+                                                    <div class="portfolio__img">
+                                                        <img class="img-fluid" src="img/Screenshot from 2025-03-29 17-25-40.png" alt="">
+                                                        <div class="box-content">
+                                                            <h3 class="title">Paris 16</h3>
+                                                            <span class="post">Rue Vital</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 mb-5 pl-xl-5">
+                                                    <h4 class="section-intro__title left-border">Janvier, 2025</h4>
+                                                    <h2 class="section-intro__subtitle small">Appartement dans le 16ème arrondissement</h2>
+                                                    <p>Transaction effectuée en 11 jours.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="row align-items-end pb-md-5 mb-4">
+                                                <div class="col-md-7 mb-4 mb-md-0">
+                                                    <div class="portfolio__img">
+                                                        <img class="img-fluid" src="img/Screenshot from 2025-03-29 17-29-07.png" alt="">
+                                                        <div class="box-content">
+                                                            <h3 class="title">Paris 16</h3>
+                                                            <span class="post">Rue Cortambert</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 mb-5 pl-xl-5">
+                                                    <h4 class="section-intro__title left-border">December, 2018</h4>
+                                                    <h2 class="section-intro__subtitle small">Appartement dans le 16ème arrondissement</h2>
+                                                    <p>Transaction effectuée en moins de 3 semaines</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="row align-items-end pb-md-5 mb-4">
+                                                <div class="col-md-7 mb-4 mb-md-0">
+                                                    <div class="portfolio__img">
+                                                        <img class="img-fluid" src="img/Paris.jpeg" alt="">
+                                                        <div class="box-content">
+                                                            <h3 class="title">Infinity</h3>
+                                                            <span class="post">Banani,Road 27</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 mb-5 pl-xl-5">
+                                                    <h4 class="section-intro__title left-border">December, 2018</h4>
+                                                    <h2 class="section-intro__subtitle small">Pure Bedroom Architecture</h2>
+                                                    <p>If you are looking at blank cassettes on the web lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                                    <a class="btn mt-3" href="./project-details.html">See More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#completeProjectCarousel" data-slide="prev">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#completeProjectCarousel" data-slide="next">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section--service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Pourquoi choisir NovaFlux Immo ?
+                        </h2>
+                        <h6 class="font-weight-light subtitle">Chez NovaFlux Immo, nous savons que vendre un bien immobilier peut être un défi. C’est pourquoi nous mettons en place une approche efficace et sur-mesure pour garantir des transactions rapides, sécurisées et rentables.</h6>
+                        <div class="row">
+                            <div class="col-md-6 mt-3">
+                                <h6 class="font-weight-medium">Un réseau d’acheteurs qualifiés</h6>
+                                <p>Nous travaillons avec des acheteurs sérieux, qu’ils achètent cash ou avec un prêt validé, pour accélérer la vente de votre bien.</p>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <h6 class="font-weight-medium">Un accompagnement complet </h6>
+                                <p>De la mise en relation à la signature chez le notaire, nous nous occupons de tout : prospection, négociation, mandat, diagnostics, formalités juridiques.</p>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <h6 class="font-weight-medium">Un service sans risque</h6>
+                                <p>Notre commission de 4 % n’est due qu’en cas de vente réussie. Pas de vente, pas de frais.</p>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <h6 class="font-weight-medium">Une expertise du marché parisien </h6>
+                                <p> Spécialistes des biens entre <br> 400 000€ et 1M€ à Paris (Neuilly, Boulogne...), nous connaissons parfaitement les tendances et la demande locale.</p>
+                            </div>
+                            <div class="col-lg-12 my-4 d-none d-md-block d-lg-block d-xl-block">
+                                <a class="btn btn-info-gradiant btn-md border-0 text-white" href="./about.html"><span>En savoir plus</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row wrap-service12">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-6 col-xs-6 img-hover service-img-item--single mb-4"><img src="./img/about2.jpg" class="rounded img-shadow img-fluid" alt="wrapkit" /></div>
+                                    <div class="col-md-12 col-sm-6 col-xs-6 img-hover service-img-item--single mb-4"><img src="./img/service2.jpg" class="rounded img-shadow img-fluid" alt="wrapkit" /></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 uneven-box d-none d-md-block d-lg-block d-xl-block">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-6 col-xs-6 img-hover service-img-item--single mb-4"><img src="./img/service3.jpg" class="rounded img-shadow img-fluid" alt="wrapkit" /></div>
+                                    <div class="col-md-12 col-sm-6 col-xs-6 img-hover service-img-item--single mb-4"><img src="./img/service4.jpg" class="rounded img-shadow img-fluid" alt="wrapkit" /></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 my-4 d-block d-sm-none">
+                                <a class="btn btn-info-gradiant btn-md border-0 text-white" href="#f12"><span>Learn More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section--project-info">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 mb-4 mb-lg-0">
+                        <h2 class="section-intro__subtitle">Vous êtes intéréssé?</h2>
+                        <p><br> N'hésitez pas à nous contacter, nous sommes disponible 7 jours sur 7 !</p>
+                    </div>
+                    <div class="col-lg-5 text-center text-lg-right">
+                        <a class="btn btn-dark" href="./project-filter.html">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main-body>
+
+    <footer>
+        <div class="footer-wrap">
+            <div class="container first_class">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <h3>Newsletter</h3>
+                        <p><br>Soyez au courant de tout nos évenements, informations, et changements !</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <form class="newsletter">
+                            <input type="text" placeholder="Email Address">
+                            <button class="newsletter_submit_btn" type="submit"><i class="fa fa-paper-plane"></i></button>
+                        </form>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-md-12">
+                            <div class="social_links mt-3">
+                                <ul>
+                                    <li class=""><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+
+                                    </li>
+                                    <li class=""><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+
+                                    </li>
+                                    <li class=""><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/font-awesome/fontawesome.min.js"></script>
+    <script src="assets/font-awesome/brands.min.js"></script>
+    <script src="assets/font-awesome/solid.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/full-screen-nav.js"></script>
+    <script src="js/jquery.instagramFeed.min.js"></script>
+    <script src="js/maps.js"></script>
+    <script src="js/plugin.js"></script>
+</body>
+
+</html>
