@@ -30,7 +30,7 @@
         background-color: #f4f4f4;
         color: #333;
       }
-      /* En-tête */
+      /* Nouveau Header simplifié */
       header {
         display: flex;
         justify-content: space-between;
@@ -43,24 +43,11 @@
         font-weight: bold;
       }
       .logo .gold {
-        color: #D4AF37; /* Couleur or */
+        color: #D4AF37;
       }
       .logo .white {
         color: #FFF;
         margin-left: 4px;
-      }
-      nav {
-        display: flex;
-        gap: 24px;
-      }
-      nav a {
-        color: #FFF;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s;
-      }
-      nav a:hover {
-        color: #D4AF37;
       }
       .hamburger {
         display: none;
@@ -69,38 +56,44 @@
         color: #FFF;
         cursor: pointer;
       }
-    /* Section Hero */
-    .hero {
-    position: relative;
-    background: url('img/Paris.jpeg') no-repeat center center;
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    }
-
-    /* Conteneur pour le texte avec fond noir semi-transparent */
-    .hero-text-bg {
-    background-color: rgba(0, 0, 0, 0.57); /* Noir avec 60% d'opacité */
-    padding: 20px 30px;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 800px;
-    margin-left: 10px;
-    margin-right: 10px;
-    }
-
-    .hero-text-bg h1 {
-    font-size: 3rem;
-    color: #FFF;
-    margin-bottom: 20px;
-    }
-
-    .hero-text-bg p {
-    font-size: 1.2rem;
-    color: #FFF;
-    line-height: 1.5;
-    }
+      @media (max-width: 768px) {
+        header nav,
+        .btn-connexion {
+          display: none;
+        }
+        .hamburger {
+          display: block;
+        }
+      }
+      /* Section Hero */
+      .hero {
+        position: relative;
+        background: url('img/Paris.jpeg') no-repeat center center;
+        background-size: cover;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+      }
+      /* Conteneur pour le texte avec fond noir semi-transparent */
+      .hero-text-bg {
+        background-color: rgba(0, 0, 0, 0.57);
+        padding: 20px 30px;
+        border-radius: 8px;
+        text-align: center;
+        max-width: 800px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .hero-text-bg h1 {
+        font-size: 3rem;
+        color: #FFF;
+        margin-bottom: 20px;
+      }
+      .hero-text-bg p {
+        font-size: 1.2rem;
+        color: #FFF;
+        line-height: 1.5;
+      }
     </style>
   </head>
 
@@ -117,7 +110,7 @@
       </symbol>
     </svg>
 
-    <!-- Nouvelle entête simplifiée -->
+    <!-- Nouveau Header -->
     <header>
       <div class="logo">
         <span class="gold">Novaflux</span>
@@ -134,13 +127,13 @@
 
     <!-- Nouvelle section Hero avec fond noir semi-transparent pour le texte -->
     <section class="hero">
-        <div class="hero-text-bg">
+      <div class="hero-text-bg">
         <h1>Maxime Karassimeonov</h1>
         <p>
-            Basé à Paris (16e), je connecte vendeurs et acheteurs sérieux pour des ventes rapides et efficaces.
-            Spécialisé dans les biens de 400k€ à 1M€ (Neuilly, Boulogne), je trouve des acheteurs cash ou prêts en un temps record !
+          Basé à Paris (16e), je connecte vendeurs et acheteurs sérieux pour des ventes rapides et efficaces.
+          Spécialisé dans les biens de 400k€ à 1M€ (Neuilly, Boulogne), je trouve des acheteurs cash ou prêts en un temps record !
         </p>
-        </div>
+      </div>
     </section>
   
     <!-- Le reste du contenu reste inchangé -->
@@ -489,7 +482,7 @@
           <div class="row">
             <div class="col-md-4 col-sm-6">
               <h3>Newsletter</h3>
-              <p><br />Soyez au courant de tout nos évenements, informations, et changements !</p>
+              <p><br />Soyez au courant de tous nos évenements, informations, et changements !</p>
             </div>
             <div class="col-md-4 col-sm-6">
               <form class="newsletter">
@@ -515,7 +508,7 @@
                       <a href="https://wa.me/33756912420" target="_blank">
                         <i class="fab fa-whatsapp" aria-hidden="true"></i>
                       </a>
-                    </li>
+                    </li>                                    
                   </ul>
                 </div>
               </div>
